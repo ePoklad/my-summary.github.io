@@ -1,0 +1,170 @@
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    .main {
+        flex-direction: column;
+    }
+
+    .main__about {
+        flex-direction: row;
+        padding: 3%;
+        max-height: 180px;
+    }
+
+    .about__img {
+        width: 15%;
+        flex-basis: 30%;
+        margin-bottom: 0;
+    }
+
+    .about__lang {
+        display: none;
+    }
+
+    .about__contacts {
+        flex-basis: 50%;
+    }
+
+    .about__skills {
+        display: flex;
+        height: 100%;
+        flex-basis: 25%;
+        padding: 1%;
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 12px;
+    }
+
+
+
+    .contacts__item,
+    .skills__item {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 540px) {
+    .container {
+        padding: 10px;
+    }
+
+    .about__skills {
+        display: none;
+    }
+
+    .contacts__item {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about__contacts {
+        flex-basis: 80%;
+    }
+
+    .contacts__list, .skills__list, .lang__list {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 440px) {
+    .container {
+        padding: 5px;
+    }
+
+    .main {
+        padding: 3%;
+    }
+
+    .main__summary {
+        padding: 3%;
+    }
+
+
+    .main__about {
+        justify-content: center;
+        min-width:0;
+
+    }
+
+    .about__contacts {
+        display: none;
+    }
+
+    .summary__main,
+    .job__title,
+    .education__title,
+    .projects__title {
+        font-size: 12px;
+    }
+
+    .job__subtitle, .education__subtitle, .projects__subtitle {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .summary__title {
+        font-size: 16px;
+    }
+
+    .summary__decr,
+    .job__descr,
+    .education__descr {
+        font-size: 12px;
+    } 
+
+    .projects__item {
+        font-size: 12px;
+    }
+
+    .projects__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    
+    
+    .about__mini {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 30px;
+        background-color: var(--mantle);
+    }
+
+    .about__contacts--mini {
+        display: inline-block;
+ 
+    }
+
+    .contacts__list {
+        width: 100%;
+    }
+
+    .item__note {
+        padding-right: 3%;
+    }
+
+    .contacts__item svg{
+        width: 3px;
+        height: 3px;
+    }
+
+    .about__skills--mini{
+        display: flex;
+        align-items: center;
+    }
+
+    .skills__list  {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .skills__item {
+        margin-right: 2%;
+    }
+}
